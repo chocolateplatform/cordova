@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* CSS Document */
+#loadIntesrtitial{position: absolute;height: 40px;width: 100px;left: 40%; top:45%; background-color: #E86431; text-align: center;text-align-last: center;font: italic; font-size:large;display: block; border-style:groove;}
+#showInterstitial{position: absolute;height: 40px;width: 100px;left: 40%; top:55%;display: none;border-style:groove;background-color:#C8EB26; text-align: center;text-align-last: center;font: italic; font-size:large;}
+
+#adloading{position: absolute;height:150px;width:150px;left:30%; top:40%;opacity: 1;background-image: url(loading6.gif); -webkit-transition:all 2s linear; display: none;}

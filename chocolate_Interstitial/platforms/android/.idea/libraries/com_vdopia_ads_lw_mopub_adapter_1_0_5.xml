@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.vdopia.ads.lw:mopub-adapter-1.0.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/89f010b16698af76cb4c3c3554391256cd7e3a4d/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/89f010b16698af76cb4c3c3554391256cd7e3a4d/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
