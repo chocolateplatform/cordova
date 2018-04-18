@@ -5,11 +5,19 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     
-    <!-- OPTIONAL
-    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+    <!-- REMOVE the following permissions if your application/game does NOT need it! -->
+    <!-- Some third party libraries may be including these permissions even though -->
+    <!-- you may not require them. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" tools:node="remove" /> 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove" /> 
+    <uses-permission android:name="android.permission.SEND_SMS" tools:node="remove" />                                                                          
+    <uses-permission android:name="android.permission.CALL_PHONE" tools:node="remove" /> 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove" /> 
+    <uses-permission android:name="android.permission.READ_CALENDAR" tools:node="remove" />    
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" tools:node="remove" /> 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" tools:node="remove" /> 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" tools:node="remove" />
+    
     <application android:hardwareAccelerated="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:supportsRtl="true">
         <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/activity_name" android:launchMode="singleTop" android:name="MainActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" android:windowSoftInputMode="adjustResize">
             <intent-filter android:label="@string/launcher_name">
