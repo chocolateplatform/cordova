@@ -265,7 +265,7 @@ dependencies {
     releaseCompile(project(path: "CordovaLib", configuration: "release"))
     // SUB-PROJECT DEPENDENCIES END
 
-    compile("com.vdopia.ads.lw:coresdk:2.5.3.3")  //our mediation sdk, which also includes Chocolate Platform demand
+    compile("com.vdopia.ads.lw:coresdk:2.5.3.5")  //our mediation sdk, which also includes Chocolate Platform demand
     compile("com.vdopia.ads.lw:adcolony-adapter:1.0.6")
     compile("com.vdopia.ads.lw:applovin-adapter:1.0.6")
     compile("com.vdopia.ads.lw:baidu-adapter:1.0.5")
