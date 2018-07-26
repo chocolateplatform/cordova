@@ -9,7 +9,7 @@ function init(){
 
 function Load(){
 	
-	document.getElementById("loadIntesrtitial").style.display="none";
+	document.getElementById("loadInterstitial").style.display="none";
 	document.getElementById("adloading").style.display="block";
 	
 }

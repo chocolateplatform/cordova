@@ -3,21 +3,17 @@ window.addEventListener("load",init,false)
 
 function init(){
 
-
+   initializeChocolateSDK("0DqXTL");
 }
 
 function Load(){
 	
-	document.getElementById("loadIntesrtitial").style.display="none";
-	document.getElementById("adloading").style.display="block";
-	console.log("Interstitial Ad Load");
-    callbackFunction = InterstitialAdEvent;
-     loadInterstitialAdFromSDK("0DqXTL");
+   document.getElementById("loadInterstitial").style.display="none";
+   document.getElementById("adloading").style.display="block";
+   console.log("Interstitial Ad Load");
+   callbackFunction = InterstitialAdEvent;
+   loadInterstitialAdFromSDK("0DqXTL");
 
-
-        //APIKEY
-
-	
 }
 
 function Show(){
@@ -29,7 +25,7 @@ function Show(){
 function InterstitialAdEvent(message) {
 console.log("Interstitial Ad Event ::: " + message);
 
-	if (message === "onInterstitialLoaded") {
+   if (message === "onInterstitialLoaded") {
 
        console.log("onInterstitialLoaded");
 
@@ -58,17 +54,16 @@ console.log("Interstitial Ad Event ::: " + message);
 
      }
    if (message === "onInterstitialClicked") {
-	   console.log("onInterstitialClicked");
+       console.log("onInterstitialClicked");
 
     }
 
 }
 
 function reload(){
- document.getElementById("adloading").style.display="none";
-       document.getElementById("showInterstitial").style.display="none";
-        document.getElementById("loadIntesrtitial").style.display="block";
-
+   document.getElementById("adloading").style.display="none";
+   document.getElementById("showInterstitial").style.display="none";
+   document.getElementById("loadIntesrtitial").style.display="block";
 
 }
 

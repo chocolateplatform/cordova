@@ -58,6 +58,25 @@ function setAdRequestAppParams(appName, pubName, appDomain, pubDomain, storeUrl,
     );
 }
 
+//////////////////////////////INITIALIZE CHOCOLATE ADS SDK//////////////////////////////
+var ACTION_CHOCOLATE_INIT = "CHOCOLATE_INIT";
+function initializeChocolateSDK(apikey) {
+    vdopiaLog("VdopiaPlugin.js:chocolateInit");
+
+    cordova.exec(
+        function(result) {
+            vdopiaLog("VdopiaPlugin.js:" + "Success");
+        },
+        function(result) {
+            vdopiaLog("VdopiaPlugin.js:" + "Success");
+        },
+        "VdopiaPlugin",
+        ACTION_CHOCOLATE_INIT,
+        [{"apikey":apikey}]
+    );
+}
+
+
 function setTestModeEnabled(isEnabled, hashID) {
     vdopiaLog("VdopiaPlugin.js: setTestModeEnabled");
 
@@ -79,12 +98,29 @@ function setTestModeEnabled(isEnabled, hashID) {
 
 //////////////////////////////SHOW INTERSTITIAL AD//////////////////////////////
 
+var ACTION_PREFETCH_INTERSTITIAL_AD = "PREFETCH_INTERSTITIAL_AD";
 var ACTION_LOAD_INTERSTITIAL_AD = "LOAD_INTERSTITIAL_AD";
 var ACTION_SHOW_INTERSTITIAL_AD = "SHOW_INTERSTITIAL_AD";
 
 var INTERSTITIAL_AD_LOADED = false;
 
 registerInterstitialAdEvents();
+
+function prefetchInterstitialAdFromSDK(apikey) {
+    vdopiaLog("VdopiaPlugin.js:prefetchInterstitialAdFromSDK");
+
+    cordova.exec(
+        function(result) {
+            vdopiaLog("VdopiaPlugin.js:" + "Success");
+        },
+        function(result) {
+            vdopiaLog("VdopiaPlugin.js:" + "Success");
+        },
+        "VdopiaPlugin",
+        ACTION_PREFETCH_INTERSTITIAL_AD,
+        [{"apikey":apikey}]
+    );
+}
 
 function loadInterstitialAdFromSDK(apikey) {
     vdopiaLog("VdopiaPlugin.js:loadInterstitialAdFromSDK");
@@ -301,7 +337,7 @@ function playMainContent() {
 }
 
 //////////////////////////////SHOW REWARD AD//////////////////////////////
-
+var ACTION_PREFETCH_REWARD_AD = "PREFETCH_REWARD_AD";
 var ACTION_LOAD_REWARD_AD = "LOAD_REWARD_AD";
 var ACTION_SHOW_REWARD_AD = "SHOW_REWARD_AD";
 var ACTION_CHECK_REWARD_AD = "CHECK_REWARD_AD";
@@ -313,6 +349,22 @@ var ACTION_SET_TESTMODE_PARAMS = "SET_TESTMODE_PARAMS";
 var REWARD_AD_LOADED = false;
 
 registerRewardAdEvents();
+
+function prefetchRewardAdFromSDK(apikey) {
+    vdopiaLog("VdopiaPlugin.js:prefetchRewardAdFromSDK");
+
+    cordova.exec(
+        function(result) {
+            vdopiaLog("VdopiaPlugin.js:" + "Success");
+        },
+        function(result) {
+            vdopiaLog("VdopiaPlugin.js:" + "Success");
+        },
+        "VdopiaPlugin",
+        ACTION_PREFETCH_REWARD_AD,
+        [{"apikey":apikey}]
+    );
+}
 
 function loadRewardAdFromSDK(apikey) {
     vdopiaLog("VdopiaPlugin.js:loadRewardAdFromSDK");
