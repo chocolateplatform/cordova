@@ -272,7 +272,7 @@ dependencies {
     implementation("com.vdopia.ads.lw:google-adapter:1.1.0")
     implementation("com.vdopia.ads.lw:inmobi-adapter:1.0.9")
     implementation("com.vdopia.ads.lw:mopub-adapter:1.0.9")
-    implementation("com.vdopia.ads.lw:ogury-adapter:1.0.4")
+    implementation("com.vdopia.ads.lw:ogury-adapter:1.0.5")
     implementation("com.vdopia.ads.lw:youappi-adapter:1.0.6")
     implementation("com.vdopia.ads.lw:tapjoy-adapter:1.0.6")
     implementation("com.vdopia.ads.lw:unity-adapter:1.1.0")
