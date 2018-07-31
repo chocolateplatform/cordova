@@ -285,7 +285,7 @@ dependencies {
     implementation 'com.inmobi.monetization:inmobi-ads:7.1.0'
     implementation 'com.applovin:applovin-sdk:8.0.0'
     implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.7.4'
-    implementation "com.youappi.sdk:youappi-sdk-android-moat:4.1.2"
+    implementation "com.youappi.sdk:youappi-sdk-android-moat:4.2.1"
     implementation('com.mopub:mopub-sdk:4.19.0@aar') {
         transitive = true
         exclude module: 'libAvid-mopub'
