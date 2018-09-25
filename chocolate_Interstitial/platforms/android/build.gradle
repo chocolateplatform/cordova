@@ -283,7 +283,7 @@ dependencies {
     implementation 'com.devbrackets.android:exomedia:4.0.3'
     implementation 'com.adcolony:sdk:3.3.5'
     implementation 'com.inmobi.monetization:inmobi-ads:7.1.0'
-    implementation 'com.applovin:applovin-sdk:8.0.0'
+    implementation 'com.applovin:applovin-sdk:8.1.3'
     implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.7.4'
     implementation "com.youappi.sdk:youappi-sdk-android-moat:4.3.6"
     implementation('com.mopub:mopub-sdk:4.19.0@aar') {
