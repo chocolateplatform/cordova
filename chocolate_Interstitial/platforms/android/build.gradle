@@ -273,7 +273,7 @@ dependencies {
     implementation("com.vdopia.ads.lw:inmobi-adapter:1.0.9")
     implementation("com.vdopia.ads.lw:mopub-adapter:1.0.9")
     implementation("com.vdopia.ads.lw:ogury-adapter:1.0.6")
-    implementation("com.vdopia.ads.lw:youappi-adapter:1.0.6")
+    implementation("com.vdopia.ads.lw:youappi-adapter:1.0.8")
     implementation("com.vdopia.ads.lw:tapjoy-adapter:1.0.6")
     implementation("com.vdopia.ads.lw:unity-adapter:1.1.0")
     implementation("com.vdopia.ads.lw:vungle-adapter:1.0.7")
@@ -285,7 +285,7 @@ dependencies {
     implementation 'com.inmobi.monetization:inmobi-ads:7.1.0'
     implementation 'com.applovin:applovin-sdk:8.0.0'
     implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.7.4'
-    implementation "com.youappi.sdk:youappi-sdk-android-moat:4.2.1"
+    implementation "com.youappi.sdk:youappi-sdk-android-moat:4.3.6"
     implementation('com.mopub:mopub-sdk:4.19.0@aar') {
         transitive = true
         exclude module: 'libAvid-mopub'
